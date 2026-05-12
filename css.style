@@ -1,0 +1,129 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #ececec;
+}
+
+/* HEADER */
+
+header{
+    background: linear-gradient(lightgreen, green);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+}
+
+header p{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+header img{
+    width: 180px;
+    border-radius: 20px;
+
+    transition: 0.5s;
+}
+
+header img:hover{
+    transform: scale(1.05) rotate(2deg);
+}
+
+/* NAV */
+
+nav{
+    text-align: center;
+    background-color: #8b5e3c;
+    color: white;
+
+    padding: 30px;
+}
+
+.btn{
+    background-color: green;
+    color: white;
+
+    padding: 12px 20px;
+
+    text-decoration: none;
+    border-radius: 10px;
+
+    display: inline-block;
+    margin-top: 15px;
+
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: darkgreen;
+    transform: scale(1.05);
+}
+
+/* MAIN */
+
+main{
+    text-align: center;
+
+    background: linear-gradient(lightblue, white);
+
+    padding: 30px;
+}
+
+/* CARDS */
+
+.cards{
+    display: flex;
+
+    justify-content: center;
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+.card{
+    background-color: white;
+
+    width: 220px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    box-shadow: 3px 3px 10px gray;
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card h3{
+    color: green;
+}
+
+.text{
+    width: 70%;
+    margin: 20px auto;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #333;
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+iframe{
+    border-radius: 20px;
+}
