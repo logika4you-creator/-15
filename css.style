@@ -1,10 +1,9 @@
-/* М2У1: Загальні стилі тексту */
+/* М2У1: Селектори та текст */
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
     margin: 0;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    background-color: #313131; /* Колір каменю/каменярні */
+    color: #eee;
 }
 
 .container {
@@ -13,167 +12,168 @@ body {
     padding: 0 20px;
 }
 
-/* М2У6/У7: Header, Фони та градієнти */
+/* М2У6/У7: Header - Градієнт неба та трави */
 .main-header {
-    background: linear-gradient(135deg, #4da141 0%, #2d5e26 100%);
-    color: white;
-    padding: 80px 0;
-    border-bottom: 10px solid #1e3f19;
+    background: linear-gradient(to bottom, #4facfe 0%, #00f2fe 70%, #4da141 70%, #2d5e26 100%);
+    padding: 100px 0;
+    border-bottom: 8px solid #3d2817; /* Земля */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 .header-flex {
-    display: flex; /* М2У4: Flexbox */
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
 }
 
-.main-title {
-    font-size: 56px;
+/* М2У1: Ефект піксельного заголовка */
+.pixel-title {
+    font-size: 80px;
+    text-transform: uppercase;
     margin: 0;
-    text-shadow: 3px 3px 0px #1e3f19;
-    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 4px 4px 0px #3d2817, 8px 8px 0px #2d5e26;
 }
 
-.subtitle {
-    font-size: 24px;
-    font-weight: 300;
-    margin-top: 10px;
-    color: #d1ffc4;
-}
-
-/* М2У2: Посилання та кнопки */
-.btn-primary {
+.hero-subtitle {
+    font-size: 28px;
+    background: rgba(0,0,0,0.3);
     display: inline-block;
-    background-color: #ff9f1c;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* М2У2: Minecraft-кнопка (об'ємна) */
+.btn-minecraft {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 20px 40px;
+    background-color: #5b5b5b; /* Сірий камінь */
     color: white;
-    padding: 15px 35px;
     text-decoration: none;
-    border-radius: 4px;
     font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.3s; /* Анімація */
-    border-bottom: 4px solid #c67a00;
+    font-size: 20px;
+    border: 4px solid #000;
+    box-shadow: inset -4px -4px 0px #222, inset 4px 4px 0px #aaa;
+    transition: 0.2s;
 }
 
-.btn-primary:hover {
-    background-color: #ffbf69;
-    transform: translateY(-3px); /* Ховер-ефект */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+.btn-minecraft:hover {
+    background-color: #4da141; /* Зеленіє при наведенні */
+    transform: scale(1.05);
+    box-shadow: inset -4px -4px 0px #1a3a18, inset 4px 4px 0px #85d87a;
 }
 
-.header-image img {
-    width: 350px;
-    border-radius: 15px;
-    box-shadow: 10px 10px 0px rgba(0,0,0,0.2);
+.header-image-box img {
+    width: 400px;
+    filter: drop-shadow(15px 15px 0px rgba(0,0,0,0.3));
     transition: 0.5s;
 }
 
-.header-image img:hover {
-    transform: rotate(3deg) scale(1.05);
+.header-image-box img:hover {
+    transform: translateY(-20px);
 }
 
-/* М2У5: Картки та секції */
-.section-modes {
-    padding: 60px 0;
-}
+/* М2У4/У5: Flexbox Картки режимів */
+.modes-section { padding: 80px 0; }
 
-.section-title {
+.title-decor {
     text-align: center;
-    font-size: 32px;
-    color: #2d5e26;
-    margin-bottom: 40px;
-}
-
-.cards-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* М2У3: Блокова модель */
-.card {
-    background: white;
-    flex: 1;
-    min-width: 280px;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    border-top: 5px solid #4da141; /* Рамка зверху */
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card-icon {
     font-size: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
+    color: #85d87a;
 }
 
-/* М2У3/У6: Стилі для списків та панелей */
-.facts-panel {
-    background: white;
-    padding: 40px;
-    border-radius: 15px;
-    margin: 40px 0;
-    border-left: 10px solid #ff9f1c;
+.modes-grid {
+    display: flex;
+    gap: 30px;
 }
 
-.facts-list {
-    list-style-type: "⛏️ ";
-    padding-left: 20px;
+.mode-card {
+    background: #444;
+    flex: 1;
+    padding: 40px 20px;
+    border: 4px solid #000;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 8px 8px 0px #000;
 }
 
-.facts-list li {
-    margin-bottom: 15px;
-    font-size: 18px;
+.mode-card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0px #2d5e26;
 }
 
-/* М2У5: Галерея через Flexbox */
-.gallery-flex {
+.icon-bg {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* М2У3: Блокова модель - Факти */
+.pixel-info {
+    background: #3d2817; /* Колір землі */
+    padding: 50px;
+    border: 6px solid #2d1a0b;
+    border-radius: 4px;
+    margin-bottom: 60px;
+}
+
+.pixel-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pixel-list li {
+    background: rgba(255,255,255,0.1);
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 20px;
+    border-left: 10px solid #4da141;
+}
+
+/* М2У5: Галерея */
+.gallery-grid {
     display: flex;
     gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
-.gallery-flex img {
-    width: calc(33.333% - 15px); /* Розрахунок ширини */
-    min-width: 250px;
-    height: 200px;
+.gallery-item {
+    flex: 1;
+    border: 4px solid #000;
+    overflow: hidden;
+    height: 250px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 8px;
-    transition: 0.3s;
+    transition: 0.5s;
+    filter: grayscale(0.5);
 }
 
-.gallery-flex img:hover {
-    filter: brightness(1.2);
+.gallery-item:hover img {
+    transform: scale(1.1);
+    filter: grayscale(0);
 }
 
 /* Footer */
-.main-footer {
-    background-color: #222;
-    color: white;
-    padding: 60px 0 20px;
+.game-footer {
+    background-color: #111;
+    padding: 80px 0 20px;
     text-align: center;
+    border-top: 10px solid #222;
 }
 
-.section-title.light {
-    color: white;
+.video-frame iframe {
+    border: 5px solid #444;
+    box-shadow: 0 0 50px rgba(77, 161, 65, 0.2);
 }
 
-.video-container {
-    margin: 30px 0;
-}
-
-.copyright {
-    margin-top: 40px;
-    color: #777;
-    font-size: 14px;
-    border-top: 1px solid #333;
+.footer-bottom {
+    margin-top: 60px;
     padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #555;
 }
