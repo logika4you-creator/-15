@@ -1,65 +1,85 @@
 body{
     font-family: sans-serif;
     margin: 0;
-    background-color: #ececec;
+
+    background: linear-gradient(lightblue, white);
 }
 
 /* HEADER */
 
 header{
-    background: linear-gradient(lightgreen, green);
-    color: white;
-
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 
-    padding: 20px;
+    flex-wrap: wrap;
+
+    padding: 40px;
+
+    background: linear-gradient(green, darkgreen);
+
+    color: white;
+}
+
+.header-text{
+    width: 50%;
+}
+
+h1{
+    font-size: 50px;
+
+    margin-bottom: 10px;
+}
+
+header h2{
+    margin-bottom: 20px;
 }
 
 header p{
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 18px;
+
+    width: 80%;
+
+    margin-bottom: 25px;
 }
 
 header img{
-    width: 180px;
-    border-radius: 20px;
+    width: 260px;
 
-    transition: 0.5s;
+    border-radius: 25px;
+
+    box-shadow: 4px 4px 15px black;
+
+    transition: 0.4s;
 }
 
 header img:hover{
     transform: scale(1.05) rotate(2deg);
 }
 
-/* NAV */
-
-nav{
-    text-align: center;
-    background-color: #8b5e3c;
-    color: white;
-
-    padding: 30px;
-}
+/* BUTTON */
 
 .btn{
-    background-color: green;
+    display: inline-block;
+
+    padding: 14px 22px;
+
+    background-color: orange;
+
     color: white;
 
-    padding: 12px 20px;
-
     text-decoration: none;
-    border-radius: 10px;
 
-    display: inline-block;
-    margin-top: 15px;
+    border-radius: 15px;
 
     transition: 0.3s;
 }
 
 .btn:hover{
-    background-color: darkgreen;
+    background-color: darkorange;
+
     transform: scale(1.05);
 }
 
@@ -68,9 +88,11 @@ nav{
 main{
     text-align: center;
 
-    background: linear-gradient(lightblue, white);
+    padding: 40px;
+}
 
-    padding: 30px;
+.title{
+    color: darkgreen;
 }
 
 /* CARDS */
@@ -79,6 +101,7 @@ main{
     display: flex;
 
     justify-content: center;
+
     gap: 20px;
 
     flex-wrap: wrap;
@@ -89,7 +112,7 @@ main{
 .card{
     background-color: white;
 
-    width: 220px;
+    width: 230px;
 
     padding: 20px;
 
@@ -101,22 +124,76 @@ main{
 }
 
 .card:hover{
-    transform: scale(1.05);
+    transform: translateY(-10px);
 }
 
 .card h3{
     color: green;
 }
 
-.text{
+/* FACTS */
+
+.facts{
+    margin-top: 50px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
     width: 70%;
-    margin: 20px auto;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    box-shadow: 3px 3px 10px gray;
+}
+
+.facts ul{
+    text-align: left;
+
+    line-height: 35px;
+}
+
+/* GALLERY */
+
+.gallery{
+    margin-top: 50px;
+}
+
+.gallery-box{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+}
+
+.gallery-box img{
+    width: 250px;
+
+    border-radius: 20px;
+
+    box-shadow: 3px 3px 10px gray;
+
+    transition: 0.3s;
+}
+
+.gallery-box img:hover{
+    transform: scale(1.05);
 }
 
 /* FOOTER */
 
 footer{
-    background-color: #333;
+    background-color: #222;
+
     color: white;
 
     text-align: center;
@@ -126,4 +203,12 @@ footer{
 
 iframe{
     border-radius: 20px;
+
+    margin-top: 20px;
+
+    max-width: 100%;
+}
+
+.footer-text{
+    margin-top: 20px;
 }
