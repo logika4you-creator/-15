@@ -1,85 +1,185 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft Adventure | Craft Your World</title>
+    <title>Minecraft Adventure</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- HEADER -->
+
     <header class="game-header">
-        <div class="container header-flex">
-            <div class="header-content">
-                <h1 class="pixel-title">Minecraft</h1>
-                <h2 class="hero-subtitle">Explore, Build and Survive</h2>
-                <p class="hero-text">
-                    Відкрий для себе світ, де єдине обмеження — це твоя уява. Створюй, руйнуй та перемагай!
+
+        <div class="overlay"></div>
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <h1>Minecraft</h1>
+
+                <p class="subtitle">
+                    Explore • Build • Survive
                 </p>
-                <a class="btn-minecraft" href="https://www.minecraft.net/" target="_blank">
-                    <span>Get Minecraft</span>
+
+                <p>
+                    Створюй власний світ,
+                    досліджуй біоми,
+                    бийся з мобами
+                    та будуй неймовірні споруди.
+                </p>
+
+                <a href="https://www.minecraft.net/"
+                    target="_blank"
+                    class="btn">
+                    PLAY NOW
                 </a>
+
             </div>
-            <div class="header-image-box">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdxTgDVD06qKc3w5xkElW4WVQ92SKlrLoySA&s" alt="Steve and Alex">
+
+            <div class="hero-image">
+
+                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/99/Steve.png"
+                    alt="Steve">
+
             </div>
+
         </div>
+
     </header>
 
+    <!-- MAIN -->
+
     <main class="container">
-        <section class="modes-section">
-            <h2 class="title-decor">Game Modes</h2>
-            <div class="modes-grid">
-                <article class="mode-card survival">
-                    <div class="icon-bg">⚔️</div>
+
+        <!-- MODES -->
+
+        <section>
+
+            <h2>Game Modes</h2>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <div class="emoji">⚔️</div>
+
                     <h3>Survival</h3>
-                    <p>Збирай ресурси, будуй прихисток та бийся з монстрами вночі.</p>
-                </article>
 
-                <article class="mode-card creative">
-                    <div class="icon-bg">🏗️</div>
+                    <p>
+                        Виживай,
+                        шукай ресурси
+                        та бийся з монстрами.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="emoji">🏗️</div>
+
                     <h3>Creative</h3>
-                    <p>Нескінченні блоки та політ. Побудуй замок своєї мрії!</p>
-                </article>
 
-                <article class="mode-card hardcore">
-                    <div class="icon-bg">💀</div>
+                    <p>
+                        Будуй без обмежень
+                        та створюй великі проєкти.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="emoji">💀</div>
+
                     <h3>Hardcore</h3>
-                    <p>Лише одне життя. Найскладніше випробування для професіоналів.</p>
-                </article>
+
+                    <p>
+                        Один шанс на виживання.
+                        Найважчий режим гри.
+                    </p>
+
+                </div>
+
             </div>
+
         </section>
 
-        <section class="pixel-info">
-            <h2 class="title-decor">Interesting Facts</h2>
-            <div class="facts-wrapper">
-                <ul class="pixel-list">
-                    <li>Один блок у грі дорівнює 1 метру в реальності.</li>
-                    <li>Кріпери з'явилися через помилку в коді моделі свині.</li>
-                    <li>Світ гри у 7 разів більший за площу поверхні Землі.</li>
-                </ul>
-            </div>
+        <!-- FACTS -->
+
+        <section class="facts">
+
+            <h2>Interesting Facts</h2>
+
+            <ul>
+
+                <li>
+                    Один блок у Minecraft ≈ 1 метр.
+                </li>
+
+                <li>
+                    Кріпер з'явився через помилку в коді.
+                </li>
+
+                <li>
+                    Світ Minecraft майже безкінечний.
+                </li>
+
+            </ul>
+
         </section>
 
-        <section class="gallery">
-            <h2 class="title-decor">Biomes Gallery</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item"><img src="https://cdn.pixabay.com/photo/2015/04/24/02/55/minecraft-737748_1280.jpg" alt="Biome 1"></div>
-                <div class="gallery-item"><img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="Biome 2"></div>
-                <div class="gallery-item"><img src="https://cdn.pixabay.com/photo/2017/01/31/15/33/minecraft-2025123_1280.jpg" alt="Biome 3"></div>
+        <!-- GALLERY -->
+
+        <section>
+
+            <h2>Biomes Gallery</h2>
+
+            <div class="gallery">
+
+                <img src="https://cdn.pixabay.com/photo/2015/04/24/02/55/minecraft-737748_1280.jpg"
+                    alt="Minecraft">
+
+                <img src="https://cdn.pixabay.com/photo/2017/01/31/15/33/minecraft-2025123_1280.jpg"
+                    alt="Minecraft">
+
+                <img src="https://images.unsplash.com/photo-1627856013091-fed6e4e30025"
+                    alt="Minecraft">
+
             </div>
+
         </section>
+
     </main>
 
-    <footer class="game-footer">
-        <h2 class="title-decor light">Trailer</h2>
-        <div class="video-frame">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/xdKTLqoE2eU" frameborder="0" allowfullscreen></iframe>
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2>Minecraft Trailer</h2>
+
+        <div class="video">
+
+            <iframe width="560"
+                height="315"
+                src="https://www.youtube.com/embed/MmB9b5njVbA"
+                title="Minecraft Trailer"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+
         </div>
-        <div class="footer-bottom">
-            <p>Created with 💚 by Young Crafter | 2026</p>
-        </div>
+
+        <p>
+            Created by Young Crafter • 2026
+        </p>
+
     </footer>
 
 </body>
+
 </html>
