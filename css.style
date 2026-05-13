@@ -1,7 +1,10 @@
 body {
     margin: 0;
+
     font-family: Arial, sans-serif;
-    background: #151515;
+
+    background: #1a1a1a;
+
     color: white;
 }
 
@@ -9,33 +12,107 @@ body {
 
 .container {
     width: 90%;
+
     max-width: 1200px;
+
     margin: auto;
 }
 
 /* HEADER */
 
-.game-header {
-    min-height: 100vh;
+.header {
+    background: linear-gradient(90deg,
+            #2e7d32,
+            #66bb6a);
 
+    padding: 20px 0;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.nav {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 36px;
+
+    margin: 0;
+
+    color: white;
+}
+
+/* MENU */
+
+.menu-list {
+    display: flex;
+
+    gap: 15px;
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+.menu-list a {
+    text-decoration: none;
+
+    color: white;
+
+    background: rgba(255,255,255,0.2);
+
+    padding: 12px 18px;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.menu-list a:hover {
+    background: white;
+
+    color: #2e7d32;
+}
+
+/* HERO */
+
+.hero {
     background:
-        linear-gradient(rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)),
+        linear-gradient(rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)),
 
         url("https://images.unsplash.com/photo-1627856013091-fed6e4e30025");
 
     background-size: cover;
+
     background-position: center;
 
-    display: flex;
-    align-items: center;
+    padding: 100px 0;
 }
 
-.hero-content {
+.hero-flex {
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
+
     gap: 40px;
+
     flex-wrap: wrap;
 }
 
@@ -44,22 +121,18 @@ body {
 }
 
 .hero-text h1 {
-    font-size: 90px;
+    font-size: 70px;
+
     margin: 0;
-    color: #6cff52;
 
-    text-shadow:
-        4px 4px 0 #204d1a,
-        8px 8px 15px rgba(0,0,0,0.5);
-}
+    color: #7fff72;
 
-.subtitle {
-    font-size: 28px;
-    color: #ccc;
+    text-shadow: 4px 4px 10px black;
 }
 
 .hero-text p {
-    font-size: 22px;
+    font-size: 24px;
+
     line-height: 1.7;
 }
 
@@ -70,37 +143,37 @@ body {
 
     margin-top: 20px;
 
-    padding: 16px 30px;
-
     background: linear-gradient(90deg,
-            #4caf50,
+            #43a047,
             #2e7d32);
 
     color: white;
 
     text-decoration: none;
 
-    font-size: 22px;
+    padding: 16px 28px;
 
     border-radius: 12px;
 
+    font-size: 22px;
+
     transition: 0.3s;
 
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
 .btn:hover {
-    transform: scale(1.07);
+    transform: scale(1.08);
 }
 
 /* HERO IMAGE */
 
 .hero-image img {
-    width: 350px;
-
-    filter: drop-shadow(0 0 30px rgba(108,255,82,0.5));
+    width: 320px;
 
     transition: 0.4s;
+
+    filter: drop-shadow(0 0 20px rgba(127,255,114,0.6));
 }
 
 .hero-image img:hover {
@@ -116,18 +189,30 @@ section {
 section h2 {
     text-align: center;
 
-    font-size: 50px;
+    font-size: 48px;
 
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
-    color: #6cff52;
+    color: #7fff72;
+}
+
+/* ABOUT */
+
+.about {
+    background: #222;
 }
 
 /* CARDS */
 
+.modes {
+    background: #181818;
+}
+
 .cards {
     display: flex;
+
     gap: 25px;
+
     flex-wrap: wrap;
 }
 
@@ -136,7 +221,7 @@ section h2 {
 
     min-width: 250px;
 
-    background: #222;
+    background: #2b2b2b;
 
     padding: 35px;
 
@@ -154,7 +239,7 @@ section h2 {
 .card:hover {
     transform: translateY(-10px);
 
-    border-color: #6cff52;
+    border-color: #7fff72;
 }
 
 .emoji {
@@ -162,40 +247,44 @@ section h2 {
 }
 
 .card h3 {
-    font-size: 34px;
+    font-size: 32px;
 }
 
 /* FACTS */
 
 .facts {
-    background: #1d1d1d;
-
-    border-radius: 20px;
-
-    padding: 50px;
+    background: #2d1b0f;
 }
 
 .facts ul {
     list-style: none;
 
     padding: 0;
+
+    max-width: 700px;
+
+    margin: auto;
 }
 
 .facts li {
-    background: #2a2a2a;
+    background: rgba(255,255,255,0.08);
 
     margin: 15px 0;
 
     padding: 20px;
 
-    border-left: 8px solid #6cff52;
+    border-left: 8px solid #7fff72;
 
     font-size: 22px;
 
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 /* GALLERY */
+
+.gallery-section {
+    background: #202020;
+}
 
 .gallery {
     display: flex;
@@ -228,15 +317,18 @@ section h2 {
 /* FOOTER */
 
 footer {
-    background: #0d0d0d;
-
-    padding: 70px 20px;
+    background: linear-gradient(180deg,
+            #111,
+            #000);
 
     text-align: center;
+
+    padding: 70px 20px;
 }
 
 .video iframe {
     width: 80%;
+
     max-width: 800px;
 
     border-radius: 20px;
@@ -247,5 +339,5 @@ footer {
 footer p {
     margin-top: 40px;
 
-    color: #777;
+    color: #888;
 }
