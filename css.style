@@ -1,179 +1,251 @@
-/* М2У1: Селектори та текст */
 body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
     margin: 0;
-    background-color: #313131; /* Колір каменю/каменярні */
-    color: #eee;
+    font-family: Arial, sans-serif;
+    background: #151515;
+    color: white;
 }
+
+/* CONTAINER */
 
 .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-/* М2У6/У7: Header - Градієнт неба та трави */
-.main-header {
-    background: linear-gradient(to bottom, #4facfe 0%, #00f2fe 70%, #4da141 70%, #2d5e26 100%);
-    padding: 100px 0;
-    border-bottom: 8px solid #3d2817; /* Земля */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-}
+/* HEADER */
 
-.header-flex {
+.game-header {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+
+        url("https://images.unsplash.com/photo-1627856013091-fed6e4e30025");
+
+    background-size: cover;
+    background-position: center;
+
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
-/* М2У1: Ефект піксельного заголовка */
-.pixel-title {
-    font-size: 80px;
-    text-transform: uppercase;
-    margin: 0;
-    color: #fff;
-    text-shadow: 4px 4px 0px #3d2817, 8px 8px 0px #2d5e26;
-}
-
-.hero-subtitle {
-    font-size: 28px;
-    background: rgba(0,0,0,0.3);
-    display: inline-block;
-    padding: 5px 15px;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-/* М2У2: Minecraft-кнопка (об'ємна) */
-.btn-minecraft {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 20px 40px;
-    background-color: #5b5b5b; /* Сірий камінь */
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    border: 4px solid #000;
-    box-shadow: inset -4px -4px 0px #222, inset 4px 4px 0px #aaa;
-    transition: 0.2s;
-}
-
-.btn-minecraft:hover {
-    background-color: #4da141; /* Зеленіє при наведенні */
-    transform: scale(1.05);
-    box-shadow: inset -4px -4px 0px #1a3a18, inset 4px 4px 0px #85d87a;
-}
-
-.header-image-box img {
-    width: 400px;
-    filter: drop-shadow(15px 15px 0px rgba(0,0,0,0.3));
-    transition: 0.5s;
-}
-
-.header-image-box img:hover {
-    transform: translateY(-20px);
-}
-
-/* М2У4/У5: Flexbox Картки режимів */
-.modes-section { padding: 80px 0; }
-
-.title-decor {
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 50px;
-    color: #85d87a;
-}
-
-.modes-grid {
+.hero-content {
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-.mode-card {
-    background: #444;
-    flex: 1;
-    padding: 40px 20px;
-    border: 4px solid #000;
-    text-align: center;
+.hero-text {
+    max-width: 550px;
+}
+
+.hero-text h1 {
+    font-size: 90px;
+    margin: 0;
+    color: #6cff52;
+
+    text-shadow:
+        4px 4px 0 #204d1a,
+        8px 8px 15px rgba(0,0,0,0.5);
+}
+
+.subtitle {
+    font-size: 28px;
+    color: #ccc;
+}
+
+.hero-text p {
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 16px 30px;
+
+    background: linear-gradient(90deg,
+            #4caf50,
+            #2e7d32);
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 22px;
+
+    border-radius: 12px;
+
     transition: 0.3s;
-    box-shadow: 8px 8px 0px #000;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
-.mode-card:hover {
-    transform: translate(-4px, -4px);
-    box-shadow: 12px 12px 0px #2d5e26;
+.btn:hover {
+    transform: scale(1.07);
 }
 
-.icon-bg {
+/* HERO IMAGE */
+
+.hero-image img {
+    width: 350px;
+
+    filter: drop-shadow(0 0 30px rgba(108,255,82,0.5));
+
+    transition: 0.4s;
+}
+
+.hero-image img:hover {
+    transform: translateY(-15px);
+}
+
+/* SECTIONS */
+
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    text-align: center;
+
     font-size: 50px;
-    margin-bottom: 20px;
+
+    margin-bottom: 50px;
+
+    color: #6cff52;
 }
 
-/* М2У3: Блокова модель - Факти */
-.pixel-info {
-    background: #3d2817; /* Колір землі */
+/* CARDS */
+
+.cards {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+
+    min-width: 250px;
+
+    background: #222;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+    border: 2px solid #333;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+
+    border-color: #6cff52;
+}
+
+.emoji {
+    font-size: 55px;
+}
+
+.card h3 {
+    font-size: 34px;
+}
+
+/* FACTS */
+
+.facts {
+    background: #1d1d1d;
+
+    border-radius: 20px;
+
     padding: 50px;
-    border: 6px solid #2d1a0b;
-    border-radius: 4px;
-    margin-bottom: 60px;
 }
 
-.pixel-list {
+.facts ul {
     list-style: none;
+
     padding: 0;
 }
 
-.pixel-list li {
-    background: rgba(255,255,255,0.1);
-    margin: 10px 0;
-    padding: 15px;
-    font-size: 20px;
-    border-left: 10px solid #4da141;
+.facts li {
+    background: #2a2a2a;
+
+    margin: 15px 0;
+
+    padding: 20px;
+
+    border-left: 8px solid #6cff52;
+
+    font-size: 22px;
+
+    border-radius: 10px;
 }
 
-/* М2У5: Галерея */
-.gallery-grid {
+/* GALLERY */
+
+.gallery {
     display: flex;
-    gap: 15px;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
 }
 
-.gallery-item {
+.gallery img {
     flex: 1;
-    border: 4px solid #000;
-    overflow: hidden;
+
+    min-width: 250px;
+
     height: 250px;
-}
 
-.gallery-item img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
-    transition: 0.5s;
-    filter: grayscale(0.5);
+
+    border-radius: 20px;
+
+    transition: 0.4s;
+
+    box-shadow: 0 6px 16px rgba(0,0,0,0.5);
 }
 
-.gallery-item:hover img {
-    transform: scale(1.1);
-    filter: grayscale(0);
+.gallery img:hover {
+    transform: scale(1.05);
 }
 
-/* Footer */
-.game-footer {
-    background-color: #111;
-    padding: 80px 0 20px;
+/* FOOTER */
+
+footer {
+    background: #0d0d0d;
+
+    padding: 70px 20px;
+
     text-align: center;
-    border-top: 10px solid #222;
 }
 
-.video-frame iframe {
-    border: 5px solid #444;
-    box-shadow: 0 0 50px rgba(77, 161, 65, 0.2);
+.video iframe {
+    width: 80%;
+    max-width: 800px;
+
+    border-radius: 20px;
+
+    border: 4px solid #333;
 }
 
-.footer-bottom {
-    margin-top: 60px;
-    padding-top: 20px;
-    border-top: 1px solid #333;
-    color: #555;
+footer p {
+    margin-top: 40px;
+
+    color: #777;
 }
