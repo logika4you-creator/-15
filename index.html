@@ -1,118 +1,162 @@
+```html id="x0m2el"
 <!DOCTYPE html>
 <html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft World</title>
+    <title>Мій світ Minecraft</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- ШАПКА -->
+
     <header>
+
         <div class="logo">
-            <h1>Minecraft World</h1>
+            Minecraft World
         </div>
 
         <nav>
-            <a href="#about">Про гру</a>
-            <a href="#goal">Мета</a>
-            <a href="#video">Відео</a>
+
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link">Головна</a></li>
+                <li><a href="#" class="nav-link">Блоки</a></li>
+                <li><a href="#" class="nav-link">Моби</a></li>
+                <li><a href="#" class="nav-link">Відео</a></li>
+            </ul>
+
         </nav>
+
     </header>
 
-    <!-- ГОЛОВНИЙ БАНЕР -->
+    <!-- HERO -->
+
     <section class="hero">
-        <div class="hero-text">
-            <h2>Ласкаво просимо у світ Minecraft</h2>
-            <p>
-                Гра, де можна будувати, досліджувати,
-                виживати та створювати власні пригоди.
+
+        <h1 class="hero-title">
+            Що таке Minecraft?
+        </h1>
+
+        <p class="hero-desc">
+            Minecraft — це гра, де можна будувати,
+            виживати, досліджувати світ
+            та створювати власні пригоди.
+        </p>
+
+        <a href="#" class="btn">
+            Почати гру
+        </a>
+
+    </section>
+
+    <!-- MAIN -->
+
+    <main>
+
+        <h2 class="section-title">
+            Цікаві факти
+        </h2>
+
+        <div class="cards-container">
+
+            <div class="card">
+
+                <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png"
+                    class="card-img">
+
+                <h3 class="card-title">
+                    Великий світ
+                </h3>
+
+                <p class="card-desc">
+                    У Minecraft можна подорожувати
+                    величезними світами та знаходити
+                    села, печери й храми.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/20/Creeper_JE2_BE1.png"
+                    class="card-img">
+
+                <h3 class="card-title">
+                    Кріпер
+                </h3>
+
+                <p class="card-desc">
+                    Кріпер — один із найвідоміших мобів.
+                    Він тихо підкрадається і вибухає.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/37/Diamond_JE3_BE3.png"
+                    class="card-img">
+
+                <h3 class="card-title">
+                    Алмази
+                </h3>
+
+                <p class="card-desc">
+                    Алмази — дуже цінний ресурс,
+                    з якого створюють сильну броню
+                    та інструменти.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- ДРУГИЙ БЛОК -->
+
+        <h2 class="section-title">
+            Яка мета гри?
+        </h2>
+
+        <div class="big-card">
+
+            <p class="big-text">
+                Minecraft не має однієї головної мети.
+                Кожен гравець сам вирішує,
+                що йому робити.
             </p>
 
-            <a class="btn" href="https://www.minecraft.net/" target="_blank">
-                Офіційний сайт
-            </a>
-        </div>
-
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdxTgDVD06qKc3w5xkElW4WVQ92SKlrLoySA&s"
-            alt="Minecraft">
-    </section>
-
-    <!-- СЕКЦІЯ ПРО ГРУ -->
-    <section class="info" id="about">
-
-        <h2>Що таке Minecraft?</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>Світ блоків</h3>
-                <p>
-                    Minecraft складається з блоків,
-                    які можна руйнувати та будувати.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Креативність</h3>
-                <p>
-                    Гравці можуть створювати власні
-                    будинки, міста та механізми.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Пригоди</h3>
-                <p>
-                    У грі можна боротися з монстрами,
-                    досліджувати печери та виживати.
-                </p>
-            </div>
+            <p class="big-text">
+                Можна будувати будинки,
+                досліджувати печери,
+                боротися з мобами
+                або грати з друзями на серверах.
+            </p>
 
         </div>
-    </section>
 
-    <!-- МЕТА ГРИ -->
-    <section class="goal" id="goal">
+    </main>
 
-        <h2>Яка мета у Minecraft?</h2>
+    <!-- FOOTER -->
 
-        <p>
-            Minecraft — це гра-пісочниця, де кожен
-            сам обирає власну мету. Можна будувати,
-            виживати, досліджувати світ або грати
-            разом із друзями.
+    <footer>
+
+        <p class="footer-text">
+            © 2026 Сайт створено учнем школи LOGIKA
         </p>
 
-        <p>
-            Гра має рейтинг PEGI 7 та підходить
-            як дітям, так і дорослим.
-        </p>
-
-    </section>
-
-    <!-- ВІДЕО -->
-    <section class="video-section" id="video">
-
-        <h2>Трейлер Minecraft</h2>
-
-        <iframe width="700" height="400"
+        <iframe width="500" height="280"
             src="https://www.youtube.com/embed/xdKTLqoE2eU?si=173KX1GQYs3ETMF-"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            title="Minecraft"
             allowfullscreen>
         </iframe>
 
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>Сайт розроблено Ковальчуком Марком © 2026</p>
     </footer>
 
 </body>
 
 </html>
+```
