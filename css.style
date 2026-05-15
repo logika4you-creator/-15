@@ -1,12 +1,9 @@
-```css id="lpf7r9"
-/* ЗАГАЛЬНІ СТИЛІ */
-
 body {
     margin: 0;
 
     font-family: Arial, sans-serif;
 
-    background-color: #1b1b1b;
+    background-color: #2b2b2b;
 
     color: white;
 }
@@ -14,7 +11,7 @@ body {
 /* ШАПКА */
 
 header {
-    background-color: #2d2d2d;
+    background-color: #3c8527;
 
     padding: 20px 40px;
 
@@ -24,9 +21,7 @@ header {
 
     align-items: center;
 
-    border-bottom: 5px solid #3c8527;
-
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    border-bottom: 5px solid #245218;
 }
 
 .logo {
@@ -34,123 +29,122 @@ header {
 
     font-weight: bold;
 
-    color: #4caf50;
-
-    text-shadow: 2px 2px 3px black;
+    color: white;
 }
 
 /* НАВІГАЦІЯ */
 
-.nav-list {
-    list-style: none;
-
+nav {
     display: flex;
 
     gap: 15px;
-
-    margin: 0;
-
-    padding: 0;
 }
 
-.nav-button {
-    background-color: #3c8527;
+nav a {
+    text-decoration: none;
 
     color: white;
 
-    text-decoration: none;
+    background-color: #245218;
 
-    padding: 12px 20px;
+    padding: 10px 18px;
 
     border-radius: 8px;
 
-    font-weight: bold;
-
     transition: 0.3s;
 
-    border: 2px solid #ffffff33;
+    font-weight: bold;
 }
 
-.nav-button:hover {
-    background-color: #2f6d1f;
-
-    transform: translateY(-2px);
+nav a:hover {
+    background-color: #1b3d13;
 }
 
 /* HERO */
 
 .hero {
-    background-image:
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url("https://images7.alphacoders.com/114/1149688.jpg");
-
-    background-size: cover;
-
-    background-position: center;
-
     text-align: center;
 
-    padding: 120px 20px;
+    background-color: #4a4a4a;
+
+    padding: 40px 20px;
 }
 
-.hero-title {
-    font-size: 55px;
+.hero h1 {
+    font-size: 45px;
 
     margin-bottom: 20px;
-
-    text-shadow: 3px 3px 5px black;
 }
 
-.hero-text {
-    font-size: 22px;
+.hero p {
+    font-size: 20px;
 
     max-width: 700px;
 
-    margin: 0 auto 35px auto;
+    margin: 0 auto 25px auto;
 
     line-height: 1.6;
 }
 
-.hero-button {
-    background-color: #3c8527;
+.hero img {
+    width: 300px;
 
-    color: white;
+    border-radius: 12px;
 
-    text-decoration: none;
-
-    padding: 16px 30px;
-
-    border-radius: 10px;
-
-    font-size: 20px;
-
-    font-weight: bold;
-
-    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
 
-.hero-button:hover {
-    background-color: #2f6d1f;
+/* FACTS */
+
+.facts {
+    background-color: #8b5e3c;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+.facts h2 {
+    font-size: 35px;
+}
+
+.facts p,
+.facts h3 {
+    max-width: 800px;
+
+    margin: 15px auto;
+
+    line-height: 1.6;
 }
 
 /* MAIN */
 
 main {
-    max-width: 1100px;
+    padding: 40px 20px;
 
-    margin: 40px auto;
-
-    padding: 0 20px;
+    text-align: center;
 }
 
-.section-title {
-    text-align: center;
+main h2 {
+    font-size: 40px;
 
-    font-size: 36px;
+    color: #7CFC00;
+}
 
-    color: #4caf50;
+.main-box {
+    background-color: #4a4a4a;
 
-    margin-bottom: 35px;
+    padding: 30px;
+
+    border-radius: 15px;
+
+    max-width: 900px;
+
+    margin: 0 auto 40px auto;
+
+    line-height: 1.7;
+
+    font-size: 18px;
 }
 
 /* КАРТКИ */
@@ -166,75 +160,33 @@ main {
 }
 
 .card {
-    background-color: #2d2d2d;
+    background-color: #4a4a4a;
 
-    width: 280px;
+    width: 250px;
 
     padding: 20px;
 
-    border-radius: 15px;
-
-    text-align: center;
-
-    border: 3px solid #444;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    border-radius: 12px;
 
     transition: 0.3s;
 }
 
 .card:hover {
-    border-color: #4caf50;
-
     transform: translateY(-5px);
+
+    background-color: #5b5b5b;
 }
 
-.card-img {
-    width: 100%;
+.card img {
+    width: 180px;
 
     height: 180px;
 
-    object-fit: cover;
-
-    border-radius: 10px;
+    object-fit: contain;
 }
 
-.card-title {
-    color: #ffd700;
-
-    margin-top: 15px;
-}
-
-.card-text {
-    color: #dddddd;
-
-    line-height: 1.5;
-}
-
-/* ВЕЛИКИЙ БЛОК */
-
-.info-block {
-    background-color: #2d2d2d;
-
-    margin-top: 50px;
-
-    padding: 35px;
-
-    border-radius: 15px;
-
-    border: 3px solid #444;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-}
-
-.info-text {
-    font-size: 20px;
-
-    line-height: 1.7;
-
-    text-align: center;
-
-    color: #dddddd;
+.card h3 {
+    color: #7CFC00;
 }
 
 /* FOOTER */
@@ -244,18 +196,26 @@ footer {
 
     text-align: center;
 
-    padding: 30px;
+    padding: 40px 20px;
 
-    margin-top: 50px;
+    margin-top: 40px;
 
     border-top: 5px solid #3c8527;
 }
 
-.footer-text {
+footer h2 {
+    margin-bottom: 25px;
+}
+
+footer p {
+    margin-top: 25px;
+
     color: #999;
+}
 
-    font-size: 16px;
+iframe {
+    max-width: 100%;
 
-    margin: 10px 0;
+    border-radius: 12px;
 }
 ```
