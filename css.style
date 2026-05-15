@@ -1,204 +1,259 @@
+```css id="2v5yn4"
 /* ЗАГАЛЬНІ СТИЛІ */
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #222;
+
+    font-family: Verdana, sans-serif;
+
+    background-color: #1a1a1a;
+
+    color: white;
 }
 
-/* ШАПКА */
+/* HEADER */
 
 header {
+    background-color: #2e2e2e;
+
+    padding: 20px;
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 
-    padding: 20px 50px;
-
-    background: linear-gradient(90deg, #2e7d32, #66bb6a);
-
-    position: sticky;
-    top: 0;
+    border-bottom: 4px solid #3c8527;
 }
 
-.logo h1 {
-    color: white;
-    margin: 0;
-}
+.logo {
+    font-size: 28px;
 
-/* НАВІГАЦІЯ */
-
-nav a {
-    text-decoration: none;
-    color: white;
-
-    margin-left: 20px;
     font-weight: bold;
+
+    color: #3c8527;
+
+    text-shadow: 2px 2px 0 black;
+}
+
+/* MENU */
+
+.nav-list {
+    list-style: none;
+
+    display: flex;
+
+    gap: 20px;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 18px;
 
     transition: 0.3s;
 }
 
-nav a:hover {
-    color: yellow;
+.nav-link:hover {
+    color: #3c8527;
 }
 
 /* HERO */
 
 .hero {
+    height: 450px;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images7.alphacoders.com/114/1149688.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
     display: flex;
-    justify-content: space-around;
+
+    flex-direction: column;
+
+    justify-content: center;
+
     align-items: center;
 
-    padding: 60px 40px;
+    text-align: center;
 
-    background: linear-gradient(to right, #81c784, #c8e6c9);
+    padding: 20px;
 }
 
-.hero img {
-    width: 350px;
-    border-radius: 20px;
+.hero-title {
+    font-size: 52px;
 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    margin-bottom: 15px;
+
+    text-shadow: 3px 3px 5px black;
 }
 
-.hero-text {
-    width: 45%;
+.hero-desc {
+    font-size: 22px;
+
+    max-width: 700px;
+
+    margin-bottom: 30px;
 }
 
-.hero-text h2 {
-    font-size: 42px;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    font-size: 20px;
-    line-height: 1.6;
-}
-
-/* КНОПКА */
+/* BUTTON */
 
 .btn {
-    display: inline-block;
+    background-color: #3c8527;
 
-    margin-top: 20px;
-    padding: 12px 25px;
-
-    background-color: #2e7d32;
     color: white;
 
+    padding: 15px 30px;
+
     text-decoration: none;
-    border-radius: 10px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    border: 2px solid white;
 
     transition: 0.3s;
 }
 
 .btn:hover {
-    background-color: #1b5e20;
-    transform: scale(1.05);
+    background-color: #2a611b;
 }
 
-/* СЕКЦІЇ */
+/* MAIN */
 
-section {
-    padding: 60px 40px;
+main {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 40px 20px;
+}
+
+.section-title {
     text-align: center;
+
+    font-size: 34px;
+
+    color: #3c8527;
+
+    margin-bottom: 30px;
 }
 
-/* КАРТКИ */
+/* CARDS */
 
-.cards {
+.cards-container {
     display: flex;
-    justify-content: center;
-    gap: 25px;
-
-    margin-top: 40px;
 
     flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 25px;
 }
 
 .card {
-    background-color: white;
+    width: 280px;
 
-    width: 250px;
-    padding: 25px;
+    background-color: #2e2e2e;
 
-    border-radius: 15px;
+    padding: 20px;
 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-radius: 12px;
+
+    text-align: center;
+
+    border: 2px solid #444;
 
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    border-color: #3c8527;
+
+    transform: translateY(-5px);
 }
 
-.card h3 {
-    color: #2e7d32;
+.card-img {
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
 }
 
-/* МЕТА */
-
-.goal {
-    background: linear-gradient(to right, #424242, #616161);
-    color: white;
+.card-title {
+    color: #ffd700;
 }
 
-.goal p {
-    width: 70%;
-    margin: 20px auto;
+.card-desc {
+    color: #cccccc;
 
+    line-height: 1.5;
+}
+
+/* BIG CARD */
+
+.big-card {
+    background-color: #2e2e2e;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    margin-top: 20px;
+
+    border: 2px solid #444;
+}
+
+.big-text {
     font-size: 18px;
+
     line-height: 1.7;
-}
 
-/* ВІДЕО */
-
-.video-section {
-    background-color: #e8f5e9;
-}
-
-iframe {
-    border-radius: 20px;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    color: #dddddd;
 }
 
 /* FOOTER */
 
 footer {
-    background-color: #1b1b1b;
-    color: white;
+    background-color: #111;
 
     text-align: center;
 
-    padding: 25px;
+    padding: 30px;
+
+    margin-top: 50px;
+
+    border-top: 4px solid #3c8527;
 }
 
-/* АДАПТИВНІСТЬ */
+.footer-text {
+    color: #999;
 
-@media (max-width: 900px) {
-
-    .hero {
-        flex-direction: column;
-    }
-
-    .hero-text {
-        width: 90%;
-    }
-
-    .hero img {
-        margin-top: 30px;
-        width: 90%;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-    }
-
-    nav a {
-        margin: 5px 0;
-    }
+    margin-bottom: 20px;
 }
+
+iframe {
+    max-width: 100%;
+
+    border-radius: 10px;
+}
+```
